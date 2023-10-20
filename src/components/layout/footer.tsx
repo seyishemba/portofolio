@@ -8,7 +8,7 @@ import type { IconType } from 'react-icons';
 export function Footer(): JSX.Element {
   return (
     <footer className='main-border layout mt-12 grid gap-8 border-0 border-t pb-2'>
-      <nav className='mt-6 flex flex-wrap justify-center gap-x-8 gap-y-4'>
+      {/* <nav className='mt-6 flex flex-wrap justify-center gap-x-8 gap-y-4'>
         {footerLinks.map(({ name, href, tip }) => (
           <Tooltip
             tooltipClassName='hidden sm:block group-hover:-translate-y-16 peer-focus-visible:-translate-y-16'
@@ -23,12 +23,12 @@ export function Footer(): JSX.Element {
             </UnstyledLink>
           </Tooltip>
         ))}
-      </nav>
+      </nav> */}
       <section className='grid justify-items-center'>
         <SpotifyCard />
       </section>
       <section className='grid justify-items-center gap-2 text-gray-600 dark:text-gray-300'>
-        <h2 className='font-medium'>Reach me out</h2>
+        <h2 className='font-medium'>Reach out to us now</h2>
         <section className='flex gap-4'>
           {socialLinks.map(({ tip, name, href, Icon }) => (
             <Tooltip
@@ -50,10 +50,10 @@ export function Footer(): JSX.Element {
         </section>
       </section>
       <p className='text-center text-sm text-gray-600 dark:text-gray-300'>
-        &copy; Risal Amin 2023 •{' '}
+        &copy; YeahsTech Innovations 2023 •{' '}
         <UnstyledLink
           className='smooth-tab transition hover:text-gray-800 dark:hover:text-gray-100'
-          href='https://github.com/ccrsxx/portofolio'
+          href='/contact'
         >
           Got any feedback?
         </UnstyledLink>
@@ -104,27 +104,21 @@ type SocialLink = {
 
 const socialLinks: SocialLink[] = [
   {
-    tip: 'Contact me at',
-    name: 'me@risalamin.com',
-    href: 'mailto:me@risalamin.com',
+    tip: 'Contact us at',
+    name: 'yeahstechinnovations@gmail.com',
+    href: 'mailto:yeahstechinnovations@gmail.com',
     Icon: HiEnvelope
   },
   {
-    tip: 'See my other projects on',
-    name: 'GitHub',
-    href: 'https://github.com/ccrsxx',
-    Icon: SiGithub
-  },
-  {
-    tip: 'Find me on',
+    tip: 'Find us on',
     name: 'LinkedIn',
-    href: 'https://linkedin.com/in/risalamin',
+    href: 'https://www.linkedin.com/company/yeahstech-innovations/',
     Icon: SiLinkedin
   },
   {
-    tip: 'Follow me on',
+    tip: 'Follow us on',
     name: 'Twitter',
-    href: 'https://twitter.com/ccrsxx',
+    href: 'https://twitter.com/yeahstech',
     Icon: SiTwitter
   }
 ];

@@ -76,8 +76,8 @@ export default function Blog({
   return (
     <main className='min-h-screen'>
       <SEO
-        title='Blog'
-        description='A blog by Risal Amin. My thoughts on the web, tech, and everything in between.'
+        title='Our blog'
+        description='Yeahstech Innovations | Get to know and work with us.'
       />
       <section className='grid gap-2'>
         <motion.h1
@@ -90,7 +90,7 @@ export default function Blog({
           className='text-gray-600 dark:text-gray-300'
           {...setTransition({ delayIn: 0.1 })}
         >
-          My thoughts on the web, tech, and everything in between.
+          Our thoughts on business, tech, and everything in between.
         </motion.p>
       </section>
       <section className='mt-2'>

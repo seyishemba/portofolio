@@ -15,7 +15,9 @@ import type { IconType } from 'react-icons';
 export default function About(): JSX.Element {
   return (
     <main className='layout min-h-screen'>
-      <SEO title='About' description='Risal Amin is a web developer' />
+      <SEO 
+        title='About us'
+        description='Yeahstech Innovations | Get to know and work with us.' />
       <section className='grid gap-2'>
         <motion.h2
           className='text-xl font-bold md:text-3xl'
@@ -27,7 +29,7 @@ export default function About(): JSX.Element {
           className='text-2xl font-bold md:text-4xl'
           {...setTransition({ delayIn: 0.1 })}
         >
-          <Accent>Risal Amin</Accent>
+          <Accent>YeahsTech Innovations</Accent>
         </motion.h1>
       </section>
       <section className='mt-4'>
@@ -35,34 +37,62 @@ export default function About(): JSX.Element {
           className='prose dark:prose-invert'
           {...setTransition({ delayIn: 0.2 })}
         >
+             <motion.h2
+          className='text-xl font-bold md:text-3xl'
+          {...setTransition({ delayIn: 0.3 })}
+        >
+          Transform your tech dreams into reality with YeahsTech.
+        </motion.h2>
           <p>
-            Hi, I&apos;m Risal. I started learning web development in November
-            2021, after building my first web app with{' '}
-            <CustomLink href='https://python.org'>Python</CustomLink> and the{' '}
-            <CustomLink href='https://streamlit.io'>Streamlit</CustomLink>{' '}
-            module. Since then, I&apos;ve been dedicated to learning as much as
-            I can about web development.
+            YeahsTech is your one-stop destination for all your tech needs. Whether you're a business owner or just someone who loves technology, our team of experts is here to provide you with top-notch tech consultation, website and app development, digital marketing, and more. Let us be your personal tech consultant/friend and bring your tech dreams to life!
+            </p>
+            <p>
+            From website development to digital marketing, our team of experts is here to provide you with top-notch tech solutions. Whether you're a business owner or an individual, we've got you covered. Let us be your personal tech consultant and take your tech game to the next level.
+</p>
+<motion.h2
+          className='text-xl font-bold md:text-3xl'
+          {...setTransition({ delayIn: 0.3 })}
+        >
+        - Stay ahead of the curve with innovative tech solutions.
+        </motion.h2>
+<p>
+  In today's fast-paced digital world, staying ahead of the curve is crucial. Yeahstech is your go-to tech agency that offers cutting-edge tech consultation, website and app development, digital marketing, and all-round tech solutions. With our innovative and ever-evolving approach, you'll always be at the forefront of technology. Trust Yeahstech to be your personal tech consultant/friend who will help you with anything tech-related
+  </p>
+<motion.h2
+          className='text-xl font-bold md:text-3xl'
+          {...setTransition({ delayIn: 0.3 })}
+        >
+- Unlock the power of technology for everyone.
+</motion.h2>
+<p>
+  YeahsTech believes that technology should be accessible to everyone. Whether you're a business owner or an individual, we offer comprehensive IT solutions that cater to all your needs. From website and app development to digital marketing, we're your go-to tech consultant/friend who will help you with anything tech-related. Embrace the future with YeahsTech by your side.
+  </p>
+<motion.h2
+          className='text-xl font-bold md:text-3xl'
+          {...setTransition({ delayIn: 0.3 })}
+        >
+-  Unlock your tech potential with expert guidance.
+</motion.h2>
+<p>
+ Don't let technology hold you back. Whether you're a business owner or just a regular person, our tech consultation services will help unlock your full potential. Get expert guidance and stay ahead in the digital world with Yeahstech innovations.
+</p>
+<p>
+Unlock the power of technology with YeahsTech by your side.
+</p>
+<p>
+  Get in touch with us today.
+
+
+         
           </p>
-          <p>
+          {/* <p>
             I began my journey by completing the front-end course on{' '}
             <CustomLink href='https://freecodecamp.org'>
               FreeCodeCamp
             </CustomLink>{' '}
-            and then moved on to{' '}
-            <CustomLink href='https://theodinproject.com'>
-              The Odin Project
-            </CustomLink>{' '}
-            to learn fullstack development. I&apos;m always motivated to learn
-            new technologies and techniques, and I enjoy getting feedback to
-            help me improve.
-          </p>
-          <p>
-            On this website, I&apos;ll be sharing my projects and writing about
-            what I&apos;ve learned. I believe that writing helps me better
-            understand and retain new information, and I&apos;m always happy to
-            share my knowledge with others. If you have any questions or want to
-            connect, don&apos;t hesitate to reach out!
-          </p>
+            and then moved on to
+          </p> */}
+
         </motion.article>
       </section>
       <section className='mt-12 grid gap-4'>

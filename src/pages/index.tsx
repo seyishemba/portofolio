@@ -21,41 +21,47 @@ export default function Home({
   return (
     <main className='grid gap-20'>
       <SEO
-        title='Risal Amin'
-        description='An online portfolio and blog by Risal Amin. Showcase some of my past projects and some of my thoughts on the world of web development.'
+        title='Yeahstech Innovations'
+        description='Get to know and work with us.'
       />
       <section className='-mt-20 grid min-h-screen content-center'>
         <motion.h2
           className='text-2xl font-bold transition-colors delay-100 md:text-4xl 2xl:text-5xl'
           {...setTransition()}
         >
-          Hi!
+          
         </motion.h2>
         <motion.h1
           className='mt-1 text-3xl font-bold transition-colors delay-200 md:text-5xl 2xl:text-6xl'
           {...setTransition({ delayIn: 0.1 })}
         >
-          I&apos;m <Accent>Risal</Accent> - Full Stack Developer
+          Unlock the power of <Accent>Technology</Accent> with <Accent>YeahsTech.</Accent>
         </motion.h1>
         <motion.p
           className='mt-4 max-w-4xl leading-relaxed text-gray-700 transition-colors delay-[400ms] dark:text-gray-200 
                      md:mt-6 md:text-lg 2xl:text-xl'
           {...setTransition({ delayIn: 0.2 })}
         >
-          I&apos;m a self-taught developer, who&apos;s currently pursuing a
-          Full-Stack development to create stunning user experiences on the
-          front-end, scalable, and secure infrastructure on the backend.
+          {/* &apos; */}
+          YeahsTech is your one-stop destination for all your tech needs.
+          <br></br>
+          
+          <br>
+          </br> From website and app development to digital marketing, our team of experts is here to provide you with cutting-edge solutions that will take your business to new heights. 
+          <br></br>
+          <br></br>
+          Say goodbye to tech headaches and hello to innovation with YeahsTech by your side.
         </motion.p>
         <motion.section
           className='mt-8 flex gap-4 text-sm md:text-base'
           {...setTransition({ delayIn: 0.3 })}
         >
-          <UnstyledLink className='custom-button clickable' href='/blog'>
-            Read my blog
+          <UnstyledLink className='custom-button clickable' href='/contact'>
+           Click here to get started 
           </UnstyledLink>
-          <UnstyledLink className='custom-button clickable' href='/about'>
+          {/* <UnstyledLink className='custom-button clickable' href='/about'>
             Learn more about me
-          </UnstyledLink>
+          </UnstyledLink> */}
         </motion.section>
         <motion.section
           className='mt-8 flex gap-4'
@@ -93,7 +99,7 @@ export default function Home({
           See more posts
         </UnstyledLink>
       </motion.section>
-      <motion.section className='grid gap-4' {...fadeInWhenVisible()}>
+      {/* <motion.section className='grid gap-4' {...fadeInWhenVisible()}>
         <h2 className='text-2xl font-bold md:text-4xl'>
           <Accent>Featured Project</Accent>
         </h2>
@@ -111,7 +117,7 @@ export default function Home({
         >
           See more projects
         </UnstyledLink>
-      </motion.section>
+      </motion.section> */}
     </main>
   );
 }
@@ -146,20 +152,15 @@ type SocialLink = {
 
 const socialLink: SocialLink[] = [
   {
-    name: 'Resume',
-    href: 'https://docs.google.com/document/d/1emlC1CdiKDE0sVVqkpoZWj5FSLdXoFUe2kIXAFxF8Kg/edit?usp=sharing',
+    name: 'Email',
+    href: 'mailto:yeahstechinnovations@gmail.com',
     iconHoverColor: 'group-hover:text-accent-main',
     Icon: HiDocumentText
   },
   {
     name: 'Twitter',
-    href: 'https://twitter.com/ccrsxx',
+    href: 'https://twitter.com/yeahstech',
     iconHoverColor: 'group-hover:text-[#1d9bf0]',
     Icon: SiTwitter
-  },
-  {
-    name: 'GitHub',
-    href: 'https://github.com/ccrsxx',
-    Icon: SiGithub
   }
 ];
