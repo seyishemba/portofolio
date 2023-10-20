@@ -44,10 +44,10 @@ export default function About(): JSX.Element {
           Transform your tech dreams into reality with YeahsTech.
         </motion.h2>
           <p>
-            YeahsTech is your one-stop destination for all your tech needs. Whether you're a business owner or just someone who loves technology, our team of experts is here to provide you with top-notch tech consultation, website and app development, digital marketing, and more. Let us be your personal tech consultant/friend and bring your tech dreams to life!
+            YeahsTech is your one-stop destination for all your tech needs. Whether you're a business owner or just someone who loves technology, our team of experts is here to provide you with top-notch tech consultation and more. 
             </p>
             <p>
-            From website development to digital marketing, our team of experts is here to provide you with top-notch tech solutions. Whether you're a business owner or an individual, we've got you covered. Let us be your personal tech consultant and take your tech game to the next level.
+            From website development to digital marketing, our team of experts is here to provide you with top-notch tech solutions. Let us be your personal tech consultant/friend and bring your tech dreams to life!
 </p>
 <motion.h2
           className='text-xl font-bold md:text-3xl'
@@ -95,7 +95,7 @@ Unlock the power of technology with YeahsTech by your side.
 
         </motion.article>
       </section>
-      <section className='mt-12 grid gap-4'>
+      {/* <section className='mt-12 grid gap-4'>
         <motion.h2
           className='text-xl font-bold md:text-3xl'
           {...setTransition({ delayIn: 0.3 })}
@@ -130,7 +130,7 @@ Unlock the power of technology with YeahsTech by your side.
             </Tooltip>
           ))}
         </motion.ul>
-      </section>
+      </section> */}
     </main>
   );
 }
